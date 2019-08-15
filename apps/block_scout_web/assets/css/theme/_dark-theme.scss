@@ -1,8 +1,8 @@
-$body-dark: #1c1d31; // body background
-$dark-bg: #22223a; // hero shade
-$dark-light-bg: #282945; // pills bg shade
-$dark-light: #313355; // tile light top share
-$labels-dark: #8a8dba; // header nav, labels
+$body-dark: #000; // body background
+$dark-bg: #0e0e0e; // hero shade
+$dark-light-bg: #0e0e0e; // pills bg shade
+$dark-light: #308968; // tile light top share
+$labels-dark: #fff; // header nav, labels
 
 // Switcher
 .dark-mode-changer {
@@ -160,7 +160,7 @@ $labels-dark: #8a8dba; // header nav, labels
 		border-bottom-color: $dark-light;
 		border-right-color: $dark-light;
 		background-color: $dark-light;
-		color: $labels-dark;
+		color: #fff;
 		&:not([class^="tile tile-type"]) {
 			border-left-color: $dark-light;
 		}
@@ -193,10 +193,10 @@ $labels-dark: #8a8dba; // header nav, labels
 		background-color: $dark-light;
 	}
 	.cube-animation-title {
-		color: $labels-dark;
+		color: #fff;
 	}
 	.tile .tile-body a,
-	.tile span[data-address-hash] { color: $dark-primary; }
+	.tile span[data-address-hash] { color: #fff; }
 	.fade-up-blocks-chain .tile-type-block-animation .tile-type-line-up {
 		background-color: $dark-primary;
 	}
@@ -504,7 +504,7 @@ $labels-dark: #8a8dba; // header nav, labels
 		border-top-color: darken($labels-dark, 30);
 		border-bottom-color: darken($labels-dark, 30);
 	}
-	
+
 	// Form Controlls
 	.form-control {
 		background-color: $dark-light;
@@ -749,7 +749,7 @@ $labels-dark: #8a8dba; // header nav, labels
 			color: #fff;
 		}
 	}
-    
+
 	// alerts
 	.alert-link {
 		color: $labels-dark;

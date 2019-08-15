@@ -5,7 +5,7 @@
 <nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar">
   <script>
     if (localStorage.getItem("current-color-mode") === "dark") {
-      document.getElementById("top-navbar").style.backgroundColor = "#282945";
+      document.getElementById("top-navbar").style.backgroundColor = "#000";
     }
   </script>
   <div class="container-fluid navbar-container">
@@ -144,8 +144,8 @@
             <button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
             <script>
               if (localStorage.getItem("current-color-mode") === "dark") {
-                document.getElementById("q").style.backgroundColor = "#22223a";
-                document.getElementById("q").style.borderColor = "#22223a";
+                document.getElementById("q").style.backgroundColor = "#000";
+                document.getElementById("q").style.borderColor = "#308968";
               }
             </script>
           <% end %>
@@ -160,4 +160,4 @@
     var modeChanger = document.getElementById("dark-mode-changer");
     modeChanger.className += " " + "dark-mode-changer--dark";
   }
-</script> 
+</script>

@@ -163,16 +163,7 @@ defmodule BlockScoutWeb.Etherscan do
         "contractAddress" => "0x0000000000000000000000000000000000000000",
         "name" => "Example Token",
         "decimals" => "18",
-        "symbol" => "ET",
-        "type" => "ERC-20"
-      },
-      %{
-        "balance" => "1",
-        "contractAddress" => "0x0000000000000000000000000000000000000001",
-        "name" => "Example ERC-721 Token",
-        "decimals" => "18",
-        "symbol" => "ET7",
-        "type" => "ERC-721"
+        "symbol" => "ET"
       }
     ]
   }

@@ -1421,8 +1421,7 @@ defmodule Explorer.EtherscanTest do
           contract_address_hash: token_balance.token_contract_address_hash,
           name: token_balance.token.name,
           decimals: token_balance.token.decimals,
-          symbol: token_balance.token.symbol,
-          type: token_balance.token.type
+          symbol: token_balance.token.symbol
         }
       ]
 
@@ -1469,8 +1468,7 @@ defmodule Explorer.EtherscanTest do
           contract_address_hash: token_balance.token_contract_address_hash,
           name: token_balance.token.name,
           decimals: token_balance.token.decimals,
-          symbol: token_balance.token.symbol,
-          type: token_balance.token.type
+          symbol: token_balance.token.symbol
         }
       ]
 

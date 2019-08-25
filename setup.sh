@@ -18,5 +18,7 @@ export "BLOCKSCOUT_VERSION=V1.0.0 - Xerom"
 export 'LINK_TO_OTHER_EXPLORERS=false'
 export 'RELEASE_LINK=https://github.com/poanetwork/blockscout/releases/tag/${BLOCKSCOUT_VERSION}  '
 export 'SUBNETWORK=XERO'
+export 'NETWORK=Ethereum Network'
+
 
 mix phx.server

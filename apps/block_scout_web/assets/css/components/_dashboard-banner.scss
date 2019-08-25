@@ -37,9 +37,7 @@ $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !defa
   display: none;
 
   @include media-breakpoint-down(md) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
+    display: none;
   }
 }
 

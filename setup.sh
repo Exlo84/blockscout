@@ -10,7 +10,7 @@ cd apps/block_scout_web
 
 mix phx.gen.cert blockscout blockscout.local; cd -
 
-export 'COIN=ETH'
+export 'COIN=POA'
 export 'ETHEREUM_JSONRPC_VARIANT=geth'
 export 'ETHEREUM_JSONRPC_HTTP_URL=http://167.86.95.197:8547'
 export 'ETHEREUM_JSONRPC_WS_URL=ws://167.86.95.197:8548'

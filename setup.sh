@@ -20,5 +20,4 @@ export 'RELEASE_LINK=https://github.com/poanetwork/blockscout/releases/tag/${BLO
 export 'SUBNETWORK=XERO'
 export 'NETWORK=Mainnet'
 
-
 mix phx.server

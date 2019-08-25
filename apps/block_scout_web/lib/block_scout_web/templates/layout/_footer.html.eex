@@ -16,6 +16,7 @@
       <div class="col-xs-12 col-lg-3">
         <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.") %></p>
         <div class="footer-social-icons">
+        <h4>POA</h4>
           <a href="https://github.com/poanetwork/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <i class="fab fa-github"></i>
           </a>
@@ -23,6 +24,17 @@
             <i class="fab fa-twitter"></i>
           </a>
           <a href="https://t.me/poa_network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <br>
+          <h4>XEROM</h4>
+          <a href="https://github.com/xero-official" rel="noreferrer" target="_blank" class="footer-social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/XeromOfficial" rel="noreferrer" target="_blank" class="footer-social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://t.me/XeromOfficial" rel="noreferrer" target="_blank" class="footer-social-icon">
             <i class="fab fa-telegram-plane"></i>
           </a>
         </div>

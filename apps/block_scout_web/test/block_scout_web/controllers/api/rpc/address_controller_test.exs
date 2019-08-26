@@ -2265,7 +2265,7 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
     end
 
     test "returns all the required fields", %{conn: conn} do
-      %{block_range: range} = emission_reward = insert(:emission_reward)
+      %{block_range: range} = insert(:emission_reward)
 
       block = insert(:block, number: Enum.random(Range.new(range.from, range.to)))
 
@@ -2273,17 +2273,10 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
       |> insert(gas_price: 1)
       |> with_block(block, gas_used: 1)
 
-      expected_reward =
-        emission_reward.reward
-        |> Wei.to(:wei)
-        |> Decimal.add(Decimal.new(1))
-        |> Wei.from(:wei)
-
       expected_result = [
         %{
           "blockNumber" => to_string(block.number),
-          "timeStamp" => to_string(block.timestamp),
-          "blockReward" => to_string(expected_reward.value)
+          "timeStamp" => to_string(block.timestamp)
         }
       ]
 
@@ -2305,19 +2298,13 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
     end
 
     test "with a block with one transaction", %{conn: conn} do
-      %{block_range: range} = emission_reward = insert(:emission_reward)
+      %{block_range: range} = insert(:emission_reward)
 
       block = insert(:block, number: Enum.random(Range.new(range.from, range.to)))
 
       :transaction
       |> insert(gas_price: 1)
       |> with_block(block, gas_used: 1)
-
-      expected_reward =
-        emission_reward.reward
-        |> Wei.to(:wei)
-        |> Decimal.add(Decimal.new(1))
-        |> Wei.from(:wei)
 
       params = %{
         "module" => "account",
@@ -2328,8 +2315,7 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
       expected_result = [
         %{
           "blockNumber" => to_string(block.number),
-          "timeStamp" => to_string(block.timestamp),
-          "blockReward" => to_string(expected_reward.value)
+          "timeStamp" => to_string(block.timestamp)
         }
       ]
 
@@ -2345,7 +2331,7 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
     end
 
     test "with pagination options", %{conn: conn} do
-      %{block_range: range} = emission_reward = insert(:emission_reward)
+      %{block_range: range} = insert(:emission_reward)
 
       block_numbers = Range.new(range.from, range.to)
 
@@ -2360,12 +2346,6 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
       |> insert(gas_price: 2)
       |> with_block(block2, gas_used: 2)
 
-      expected_reward =
-        emission_reward.reward
-        |> Wei.to(:wei)
-        |> Decimal.add(Decimal.new(4))
-        |> Wei.from(:wei)
-
       params = %{
         "module" => "account",
         "action" => "getminedblocks",
@@ -2379,8 +2359,7 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
       expected_result = [
         %{
           "blockNumber" => to_string(block2.number),
-          "timeStamp" => to_string(block2.timestamp),
-          "blockReward" => to_string(expected_reward.value)
+          "timeStamp" => to_string(block2.timestamp)
         }
       ]
 
@@ -2682,7 +2661,7 @@ defmodule BlockScoutWeb.API.RPC.AddressControllerTest do
     })
   end
 
-  defp resolve_schema(result \\ %{}) do
+  defp resolve_schema(result) do
     %{
       "type" => "object",
       "properties" => %{

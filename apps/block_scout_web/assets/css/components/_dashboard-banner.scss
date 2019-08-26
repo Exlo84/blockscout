@@ -32,7 +32,9 @@ $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !defa
 .dashboard-banner-network-graph {
   display: none;
   @include media-breakpoint-down(md) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
   }
 }
 

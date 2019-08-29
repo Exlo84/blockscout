@@ -15,6 +15,7 @@
 - [#2616](https://github.com/poanetwork/blockscout/pull/2616) - deduplicate coin history records by delta
 - [#2613](https://github.com/poanetwork/blockscout/pull/2613) - fix getminedblocks rpc endpoint
 - [#2592](https://github.com/poanetwork/blockscout/pull/2592) - process new metadata format for whisper
+- [#2591](https://github.com/poanetwork/blockscout/pull/2591) - Fix url error in API page
 - [#2572](https://github.com/poanetwork/blockscout/pull/2572) - Ease non-critical css
 - [#2570](https://github.com/poanetwork/blockscout/pull/2570) - Network icons preload
 - [#2569](https://github.com/poanetwork/blockscout/pull/2569) - do not fetch emission rewards for transactions csv exporter
@@ -24,9 +25,10 @@
 - [#2538](https://github.com/poanetwork/blockscout/pull/2538) - fetch the last not empty coin balance records
 
 ### Chore
+- [#2646](https://github.com/poanetwork/blockscout/pull/2646) - Added Xerom to list of Additional Chains using BlockScout
 - [#2634](https://github.com/poanetwork/blockscout/pull/2634) - add Lukso to networks dropdown
-- [#2611](https://github.com/poanetwork/blockscout/pull/2611) - fix js dependency vulnerabilities
 - [#2617](https://github.com/poanetwork/blockscout/pull/2617) - skip cache update if there are no blocks inserted
+- [#2611](https://github.com/poanetwork/blockscout/pull/2611) - fix js dependency vulnerabilities
 - [#2594](https://github.com/poanetwork/blockscout/pull/2594) - do not start genesis data fetching periodically
 - [#2590](https://github.com/poanetwork/blockscout/pull/2590) - restore backward compatablity with old releases
 - [#2577](https://github.com/poanetwork/blockscout/pull/2577) - Need recompile column in the env vars table

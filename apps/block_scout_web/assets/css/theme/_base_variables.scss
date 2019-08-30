@@ -49,7 +49,6 @@ $teal: #009097 !default;
 $cyan: #90e1d8 !default;
 $dark-purple: #923dc3;
 $black: #000000;
-$white: #fff;
 
 $colors: () !default;
 $colors: map-merge(
@@ -67,8 +66,7 @@ $colors: map-merge(
     "white": $white,
     "gray": $gray-600,
     "gray-dark": $gray-800,
-    "black": $black,
-    "white": $white
+    "black": $black
   ),
   $colors
 );

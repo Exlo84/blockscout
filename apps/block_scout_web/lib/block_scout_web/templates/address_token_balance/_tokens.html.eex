@@ -27,7 +27,7 @@
             <%= format_according_to_decimals(token_balance.value, token_balance.token.decimals) %> <%= token_balance.token.symbol %>
           </p>
           <%= if token_balance.token.usd_value do %>
-            <p class="mb-0 col-md-6 text-right text-muted">
+            <p class="mb-0 col-md-6 text-right">
               <span data-selector="token-price" data-token-usd-value="<%= token_balance.token.usd_value %>"></span>
             </p>
           <% end %>

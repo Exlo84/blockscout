@@ -1,7 +1,7 @@
 <tr>
   <td class="stakes-td" style="color: white">
       <!-- incremented number by order in the list -->
-      <span class="color-lighten">
+      <span>
         <%= @index %>
       </span>
   </td>
@@ -18,7 +18,7 @@
       <% end %>
     </span>
   </td>
-  <td class="stakes-td color-lighten" style="color: #fff">
+  <td class="stakes-td" style="color: #fff">
     <!-- percentage of coins from total supply -->
     <%= if @total_supply do %>
       <%= balance_percentage(@address, @total_supply) %>

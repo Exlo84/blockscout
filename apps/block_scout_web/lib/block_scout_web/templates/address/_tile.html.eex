@@ -1,14 +1,14 @@
 <tr>
-  <td class="stakes-td">
+  <td class="stakes-td" style="color: white">
       <!-- incremented number by order in the list -->
       <span class="color-lighten">
         <%= @index %>
       </span>
   </td>
-  <td class="stakes-td">
+  <td class="stakes-td" style="color: white">
     <%= @address |> BlockScoutWeb.AddressView.address_partial_selector(nil, nil) |> BlockScoutWeb.RenderHelpers.render_partial() %>
   </td>
-  <td class="stakes-td">
+  <td class="stakes-td" style="color: white">
     <span data-test="address_balance"><%= balance(@address) %></span>
     <!-- USD value of the balance -->
     <span
@@ -24,7 +24,7 @@
       <%= balance_percentage(@address, @total_supply) %>
     <% end %>
   </td>
-  <td class="stakes-td">
+  <td class="stakes-td" style="color: white">
     <span class="mr-4">
       <span data-test="transaction_count">
         <%= @tx_count %>

@@ -1,6 +1,6 @@
 <div class="tile tile-type-token">
   <div class="row justify-content align-items-center">
-    <div class="col-md-7 d-flex flex-column mt-3 mt-md-0">
+    <div class="col-md-7 d-flex flex-column mt-3 mt-md-0" style="color:white">
       <%= link(
             to: address_token_transfers_path(@conn, :index, @address.hash, @token.contract_address_hash),
             class: "tile-title-lg",
@@ -13,8 +13,8 @@
         <span data-selector="token-price" data-usd-value="<%= @token.usd_value %>"></span>
       <% end %>
     </div>
-    <div class="col-md-5 d-flex flex-column text-md-right mt-3 mt-md-0">
-      <span class="tile-title-lg text-md-right align-bottom">
+    <div class="col-md-5 d-flex flex-column text-md-right mt-3 mt-md-0" style="color:white">
+      <span class="tile-title-lg text-md-right align-bottom" style="color:white">
         <%= format_according_to_decimals(@token.balance, @token.decimals) %> <%= @token.symbol %>
       </span>
     </div>

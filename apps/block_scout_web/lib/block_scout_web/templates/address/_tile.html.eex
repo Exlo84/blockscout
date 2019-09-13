@@ -25,7 +25,7 @@
     <% end %>
   </td>
   <td class="stakes-td" style="color: white">
-    <span class="mr-4">
+    <span class="mr-4" style="color: white" >
       <span data-test="transaction_count">
         <%= @tx_count %>
       </span> <%= gettext "Transactions sent" %>

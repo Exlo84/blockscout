@@ -18,7 +18,7 @@
       <% end %>
     </span>
   </td>
-  <td class="stakes-td color-lighten">
+  <td class="stakes-td color-lighten" style="color: #fff;">
     <!-- percentage of coins from total supply -->
     <%= if @total_supply do %>
       <%= balance_percentage(@address, @total_supply) %>

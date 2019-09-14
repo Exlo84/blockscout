@@ -1,3 +1,5 @@
+git pull
+
 rm -r apps/block_scout_web/priv/static
 
 mix do deps.get, local.rebar --force, deps.compile, compile

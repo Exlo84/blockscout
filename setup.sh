@@ -10,8 +10,8 @@ cd apps/explorer && npm install; cd -
 
 cd apps/block_scout_web; cd -
 
-export 'COIN=POA'
-echo 'COIN=POA'
+export 'COIN=ETH'
+echo 'COIN=ETH'
 
 export 'ETHEREUM_JSONRPC_VARIANT=geth'
 echo 'ETHEREUM_JSONRPC_VARIANT=geth'
@@ -37,10 +37,10 @@ echo 'SUBNETWORK=XERO'
 export 'NETWORK=Mainnet'
 echo 'NETWORK=Mainnet'
 
-export 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=1'
-echo 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=1'
+export 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=0.3'
+echo 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=0.3'
 
-export 'TXS_COUNT_CACHE_PERIOD=1 * 1 * 1'
+export 'TXS_COUNT_CACHE_PERIOD=1'
 echo 'TXS_COUNT_CACHE_PERIOD=1 * 1 * 1'
 
 export 'CHAIN_SPEC_PATH=chainspec.json'

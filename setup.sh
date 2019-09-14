@@ -43,4 +43,7 @@ echo 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=3 * 6'
 export 'TXS_COUNT_CACHE_PERIOD=6 * 6 * 2'
 echo 'TXS_COUNT_CACHE_PERIOD=6 * 6 * 2'
 
+export 'CHAIN_SPEC_PATH=chainspec.json'
+echo 'CHAIN_SPEC_PATH=chainspec.json'
+
 mix phx.server

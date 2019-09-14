@@ -1,0 +1,9 @@
+{
+  "name": "GethTranslation",
+  "engine": {
+    "Ethash": {
+      "params": {
+        "blockReward": "0x1314FB37062980000",
+      }
+    }
+  }

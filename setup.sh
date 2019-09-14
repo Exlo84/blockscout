@@ -46,4 +46,7 @@ echo 'TXS_COUNT_CACHE_PERIOD=6 * 6 * 2'
 export 'CHAIN_SPEC_PATH=chainspec.json'
 echo 'CHAIN_SPEC_PATH=chainspec.json'
 
+export 'EMISSION_FORMAT=STANDARD'
+echo 'EMISSION_FORMAT=STANDARD'
+
 mix phx.server

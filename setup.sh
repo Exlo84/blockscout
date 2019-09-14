@@ -6,9 +6,7 @@ cd apps/block_scout_web/assets; npm install && node_modules/webpack/bin/webpack.
 
 cd apps/explorer && npm install; cd -
 
-cd apps/block_scout_web
-
-mix phx.gen.cert blockscout blockscout.local; cd -
+cd apps/block_scout_web; cd -
 
 export 'COIN=POA'
 export 'ETHEREUM_JSONRPC_VARIANT=geth'

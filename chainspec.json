@@ -1,9 +1,40 @@
 {
-  "name": "GethTranslation",
+  "name": "Xerom",
   "engine": {
     "Ethash": {
       "params": {
+        "gasLimitBoundDivisor": "0x0400",
+				"minimumDifficulty": "0x020000",
+				"difficultyBoundDivisor": "0x0800",
+				"durationLimit": "0xD",
         "blockReward": "0x1314FB37062980000",
+				"registrar": "",
+				"homesteadTransition": "0x0"
       }
     }
-  }
+  },
+  "params": {
+		"accountStartNonce": "0x0100000",
+		"maximumExtraDataSize": "0x20",
+		"minGasLimit": "0x1388",
+		"networkID" : "0x140ADC"
+	},
+	"genesis": {
+		"seal": {
+			"ethereum": {
+				"nonce": "0x0000000000000042",
+				"mixHash": "0x00000000000000000000000000000000000000647572616c65787365646c6578"
+			}
+		},
+		"difficulty": "2E90EDD000",
+		"author": "0x0000000000000000000000000000000000000000",
+		"timestamp": "0x00",
+		"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+		"extraData": "0x646563656e7472616c697a6564206279206e6174757265",
+		"gasLimit": "0x2fefd8"
+	},
+	"nodes": [
+	],
+	"accounts": {
+	}
+}

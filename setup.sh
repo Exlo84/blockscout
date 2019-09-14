@@ -19,5 +19,7 @@ export 'LINK_TO_OTHER_EXPLORERS=false'
 export 'RELEASE_LINK=https://github.com/poanetwork/blockscout/releases/tag/${BLOCKSCOUT_VERSION}  '
 export 'SUBNETWORK=XERO'
 export 'NETWORK=Mainnet'
+export 'ADDRESS_WITH_BALANCES_UPDATE_INTERVAL=3 * 6'
+export 'TXS_COUNT_CACHE_PERIOD=6 * 6 * 2'
 
 mix phx.server

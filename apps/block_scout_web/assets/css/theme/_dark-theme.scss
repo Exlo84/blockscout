@@ -152,9 +152,12 @@ $labels-dark: #fff; // header nav, labels
 
 	// Components
 	a {
-		color: $dark-primary;
+		color: #840032;
 	}
 
+	.text-muted {
+		color: white;
+	}
 	.tile {
 		border-top-color: $dark-light;
 		border-bottom-color: $dark-light;

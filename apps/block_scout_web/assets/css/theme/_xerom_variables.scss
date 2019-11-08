@@ -2,7 +2,7 @@
 $primary: #308968;
 $secondary: #343434;
 $tertiary: #7f7f7f;
-$additional-font: #ff95db;
+$additional-font: #308968;
 
 // footer
 $footer-background-color: $primary;
@@ -23,7 +23,7 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #4b021e; // stats bg
+$dashboard-banner-network-plain-container-background-color: #59c596; // stats bg
 
 
 // navigation
@@ -34,14 +34,14 @@ $header-icon-color-hover: $tertiary; // nav icon on hover
 
 // buttons
 $btn-line-bg: #fff; // button bg
-$btn-line-color: #4b021e; // button border and font color && hover bg color
-$btn-copy-color: #4b021e; // btn copy
-$btn-qr-color: #4b021e; // btn qr-code
+$btn-line-color: #59c596; // button border and font color && hover bg color
+$btn-copy-color: #59c596; // btn copy
+$btn-qr-color: #59c596; // btn qr-code
 
 //links & tile
 .tile a { color: $tertiary !important; } // links color for badges
 .tile-type-block {
-    border-left: 4px solid #4b021e;
+    border-left: 4px solid #59c596;
 } // tab active bg
 
 // card

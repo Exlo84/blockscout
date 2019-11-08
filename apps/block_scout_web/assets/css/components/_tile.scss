@@ -19,7 +19,7 @@ $tile-body-a-color: #5959d8 !default;
 
 @mixin generate-tile-block($prefix, $color, $label-color: false) {
   &#{ $prefix } {
-    border-left: 4px solid $color;
+    border-left: 4px solid #308968;
 
     .tile-transaction-type-block {
       a {

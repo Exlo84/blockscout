@@ -8,6 +8,19 @@
       document.getElementById("top-navbar").style.backgroundColor = "#000";
     }
   </script>
+  <script>
+    if (localStorage.getItem("current-color-mode") === "dark") {
+      document.getElementById("Fallen1").style.color = "#308968";
+      document.getElementById("Fallen2").style.color = "#308968";
+      document.getElementById("Fallen3").style.color = "#308968";
+      document.getElementById("Fallen4").style.color = "#308968";
+    } else {
+      document.getElementById("Fallen1").style.color = "#000";
+      document.getElementById("Fallen2").style.color = "#000";
+      document.getElementById("Fallen3").style.color = "#000";
+      document.getElementById("Fallen4").style.color = "#000";
+    }
+  </script>
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <img class="navbar-logo" id="navbar-logo" src="<%= logo() %>" alt="<%= subnetwork_title() %>" />

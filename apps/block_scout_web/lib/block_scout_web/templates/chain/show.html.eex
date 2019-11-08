@@ -1,16 +1,3 @@
-<script>
-  if (localStorage.getItem("current-color-mode") === "light") {
-    document.getElementById("Fallen1").style.color = "#000";
-    document.getElementById("Fallen2").style.color = "#000";
-    document.getElementById("Fallen3").style.color = "#000";
-    document.getElementById("Fallen4").style.color = "#000";
-  } else {
-    document.getElementById("Fallen1").style.color = "#308968";
-    document.getElementById("Fallen2").style.color = "#308968";
-    document.getElementById("Fallen3").style.color = "#308968";
-    document.getElementById("Fallen4").style.color = "#308968";
-  }
-</script>
 <div class='dashboard-banner-container' data-page="chain-details">
   <div class="container">
     <div class="dashboard-banner">

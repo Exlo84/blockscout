@@ -1,14 +1,14 @@
 <tr>
-  <td class="stakes-td" style="color: white">
+  <td class="stakes-td">
       <!-- incremented number by order in the list -->
       <span>
         <%= @index %>
       </span>
   </td>
-  <td class="stakes-td" style="color: white">
+  <td class="stakes-td">
     <%= @address |> BlockScoutWeb.AddressView.address_partial_selector(nil, nil) |> BlockScoutWeb.RenderHelpers.render_partial() %>
   </td>
-  <td class="stakes-td" style="color: white">
+  <td class="stakes-td">
     <span data-test="address_balance"><%= balance(@address) %></span>
     <!-- USD value of the balance -->
     <span
@@ -18,14 +18,14 @@
       <% end %>
     </span>
   </td>
-  <td class="stakes-td" style="color: #fff">
+  <td class="stakes-td">
     <!-- percentage of coins from total supply -->
     <%= if @total_supply do %>
       <%= balance_percentage(@address, @total_supply) %>
     <% end %>
   </td>
-  <td class="stakes-td" style="color: white">
-    <span class="mr-4" style="color: white" >
+  <td class="stakes-td">
+    <span class="mr-4">
       <span data-test="transaction_count">
         <%= @tx_count %>
       </span> <%= gettext "Transactions sent" %>

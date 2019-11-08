@@ -70,7 +70,7 @@
               </span>
             <% end %>
             <span>
-              <span class="address-detail-item" style="color: white">
+              <span class="address-detail-item" >
                 <%= if contract?(@address) do %>
                   <%= gettext(">=") %>
                   <span data-selector="transaction-count">
@@ -85,12 +85,12 @@
                 <% end %>
               </span>
               <%= if @address.fetched_coin_balance_block_number do %>
-                <span class="address-detail-item" style="color: white">
+                <span class="address-detail-item" >
                   <%= gettext("Last Balance Update: Block #") %><span data-selector="fetched-coin-balance-block-number"><%= @address.fetched_coin_balance_block_number %></span>
                 </span>
               <% end %>
               <%= if validator?(@validation_count) do %>
-                <span class="address-detail-item" style="color: white">
+                <span class="address-detail-item">
                   <span data-selector="validation-count">
                     <%= BlockScoutWeb.Cldr.Number.to_string!(@validation_count, format: "#,###") %>
                   </span>
@@ -102,7 +102,7 @@
           <% from_address_hash = from_address_hash(@address) %>
 
           <%= if contract?(@address) do %>
-            <span data-test="address_contract_creator" style="color: white">
+            <span data-test="address_contract_creator" >
               <%= if from_address_hash do %>
                 <%= gettext "Created by" %> <%= link(
                   trimmed_hash(from_address_hash(@address)),

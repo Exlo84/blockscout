@@ -9,13 +9,13 @@
       <% end %>
       <span data-from-now="<%= @coin_balance.block_timestamp %>"></span>
     </div>
-    <div class="col-md-3 offset-md-3 d-flex flex-column text-md-right mt-3 mt-md-0" style="color: white">
+    <div class="col-md-3 offset-md-3 d-flex flex-column text-md-right mt-3 mt-md-0" >
       <span class="tile-title-lg align-bottom" style="color: #000" data-balance-change-sign="<%= delta_sign(@coin_balance.delta) %>">
         <%= delta_arrow(@coin_balance.delta) %>
         <%= format_delta(@coin_balance.delta) %>
       </span>
     </div>
-    <div class="col-md-3 d-flex flex-column mt-3 mt-md-0 text-md-right" style="color: white">
+    <div class="col-md-3 d-flex flex-column mt-3 mt-md-0 text-md-right" >
       <span class="tile-title-lg align-bottom" style="color: #000">
         <%= format(@coin_balance.value) %>
       </span>

@@ -43,8 +43,8 @@
           </span>
           <div class="d-flex flex-row justify-content-start text-muted">
             <span class="mr-4 text-<%= BlockScoutWeb.TransactionView.type_suffix(@transaction) %>"><%= BlockScoutWeb.TransactionView.transaction_display_type(@transaction) %></span>
-            <span class="mr-4" style="color: white"  style="color: white" data-transaction-status="<%= BlockScoutWeb.TransactionView.formatted_status(status) %>"><%= BlockScoutWeb.TransactionView.formatted_status(status) %></span>
-            <span class="mr-4" style="color: white" >
+            <span class="mr-4"    data-transaction-status="<%= BlockScoutWeb.TransactionView.formatted_status(status) %>"><%= BlockScoutWeb.TransactionView.formatted_status(status) %></span>
+            <span class="mr-4"  >
               <%= if block do %>
                 <span data-from-now="<%= @transaction.block.timestamp %>"></span>
               <% end %>

@@ -64,7 +64,7 @@
                 <span class="mr-4"><%= @total_token_transfers %> <%= gettext "Transfers" %></span>
               <% end %>
               <%= if decimals?(@token) do %>
-                <span class="mr-4" style="color: white" ><%= @token.decimals %> <%= gettext "Decimals" %></span>
+                <span class="mr-4"  ><%= @token.decimals %> <%= gettext "Decimals" %></span>
               <% end %>
             </div>
           </div>

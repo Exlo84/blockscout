@@ -382,6 +382,7 @@ $labels-dark: #5a5a5a; // header nav, labels
 	.tooltip .arrow:before {
 		border-top-color: $dark-primary;
 		border-bottom-color: $dark-primary;
+		color: #000;
 	}
 
 	.tooltip > .tooltip-inner {}

@@ -10,8 +10,8 @@ cd apps/explorer && npm install; cd -
 
 cd apps/block_scout_web; cd -
 
-export 'COIN=ETH'
-echo 'COIN=ETH'
+export 'COIN=XERO'
+echo 'COIN=XERO'
 
 export 'ETHEREUM_JSONRPC_VARIANT=geth'
 echo 'ETHEREUM_JSONRPC_VARIANT=geth'
@@ -28,8 +28,8 @@ echo "BLOCKSCOUT_VERSION=V1.1.1 - Xerom - exlo.tech"
 export 'LINK_TO_OTHER_EXPLORERS=false'
 echo 'LINK_TO_OTHER_EXPLORERS=false'
 
-export 'RELEASE_LINK=https://github.com/poanetwork/blockscout/releases/tag/${BLOCKSCOUT_VERSION}  '
-echo 'RELEASE_LINK=https://github.com/poanetwork/blockscout/releases/tag/${BLOCKSCOUT_VERSION}  '
+export 'RELEASE_LINK=https://github.com/Exlo84/blockscout/releases/tag/${BLOCKSCOUT_VERSION}'
+echo 'RELEASE_LINK=https://github.com/Exlo84/blockscout/releases/tag/${BLOCKSCOUT_VERSION}'
 
 export 'SUBNETWORK=XERO'
 echo 'SUBNETWORK=XERO'

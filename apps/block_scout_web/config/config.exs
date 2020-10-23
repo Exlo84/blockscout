@@ -22,7 +22,7 @@ config :block_scout_web, BlockScoutWeb.Chain,
   has_emission_funds: false
 
 config :block_scout_web,
-  link_to_other_explorers: System.get_env("LINK_TO_OTHER_EXPLORERS") == "true",
+  link_to_other_explorers: System.get_env("LINK_TO_OTHER_EXPLORERS") == "false",
   other_explorers: %{
     "Etherscan" => "https://etherscan.io/",
     "EtherChain" => "https://www.etherchain.org/",

@@ -19,7 +19,7 @@
           <a href="https://github.com/Exlo84/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://discord.gg/qtsC9Dc" rel="noreferrer" target="_blank" class="icon-link" data-toggle="tooltip" data-placement="top" title="<%= gettext("Discord") %>">
+          <a href="https://discord.gg/qtsC9Dc" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Discord") %>'>
             <i class="fab fa-discord"></i>
           </a>
           <a href="https://twitter.com/TeAmExlo/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
